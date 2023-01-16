@@ -4,7 +4,7 @@ This repo contains source code of the signal generator I made during my bachelor
 
 ## Features
 
-* 0.1-4 MHz range DDS signal generation (sine, triangle, square) with frequency and amplitude control
+* 0.1 Hz - 4 MHz range DDS signal generation (sine, triangle, square) with frequency and amplitude control
 * 5 Vp-p PWM signal with frequency and duty cycle control 
 * LCD touch screen with fully operational GUI (signal on-off, wave select, frequency/amplitude/duty control, virtual numpad
 * Rotary encoder for fine-tuning
@@ -37,7 +37,16 @@ Files included with description:
 * **dds.ino** - main file with most of logic
 * **ILI9341.h** - LCD Touch screen driver (generating shapes, sprites, decoding and printing of fonts, touch panel)
 * **pwm.h** - PWM generation using Timer4
-* **BcdFloat.h* - BCDFloat class. It defines new class of object which contains floating-point number as set of digits with decimal point. Provides basic functionality (adding, substracting, approxing, changing of specified digits, removing residual zeros). It has been set up to provide better management of floating-point values by GUI and avoid floating-point computing errors (e.g. 20.0000 + 10.00000 = 29.99999).
+* **BcdFloat.h** - BCDFloat class. It defines new class of object which contains floating-point number as set of digits with decimal point. Provides basic functionality (adding, substracting, approxing, changing of specified digits, removing residual zeros). It has been set up to provide better management of floating-point values by GUI and avoid floating-point computing errors (e.g. 20.0000 + 10.00000 = 29.99999).
 * **symbols.h** - contains memory-programmable graphics
 
 * **Fonts** - directory contains pre-rendered font graphics.
+
+## Photos
+
+<img src="images/pcb1.jpg" height=300> <img src="images/pcb2.jpg" height=300>
+
+<img src="images/gui1.jpg" height=300> <img src="images/gui2.jpg" height=300> <img src="images/gui3.jpg" height=300>
+
+
+
